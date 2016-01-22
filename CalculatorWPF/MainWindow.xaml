@@ -1,0 +1,47 @@
+﻿<Window x:Class="CalculatorWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="简陋计算器" Height="423" Width="674">
+    <Grid RenderTransformOrigin="0.5,0.5" Margin="0,0,2,0">
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform Angle="0"/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+        <Button x:Name="digit1" Content="1" HorizontalAlignment="Left" Margin="100,111,0,0" VerticalAlignment="Top" Width="45" Height="43" Click="digit1_Click" FontSize="20" ToolTip="1"/>
+        <Button x:Name="digit2" Content="2" HorizontalAlignment="Left" Margin="173,111,0,0" VerticalAlignment="Top" Width="45" Height="43" Click="digit2_Click" FontSize="20"/>
+        <Button x:Name="digit3" Content="3" HorizontalAlignment="Left" Margin="246,111,0,0" VerticalAlignment="Top" Width="45" Height="43" Click="digit3_Click" FontSize="20"/>
+        <Button x:Name="digit4" Content="4" HorizontalAlignment="Left" Margin="100,177,0,0" VerticalAlignment="Top" Width="45" Height="43" Click="digit4_Click" FontSize="20"/>
+        <Button x:Name="digit5" Content="5" HorizontalAlignment="Left" Margin="173,177,0,0" VerticalAlignment="Top" Width="45" Height="43" Click="digit5_Click" FontSize="20"/>
+        <Button x:Name="digit6" Content="6" HorizontalAlignment="Left" Margin="246,177,0,0" VerticalAlignment="Top" Width="45" Height="43" Click="digit6_Click" FontSize="20"/>
+        <Button x:Name="digit7" Content="7" HorizontalAlignment="Left" Margin="100,245,0,0" VerticalAlignment="Top" Width="45" Height="43" Click="digit7_Click" FontSize="20"/>
+        <Button x:Name="digit8" Content="8" HorizontalAlignment="Left" Margin="173,245,0,0" VerticalAlignment="Top" Width="45" Height="43" Click="digit8_Click" FontSize="20"/>
+        <Button x:Name="digit9" Content="9" HorizontalAlignment="Left" Margin="246,245,0,0" VerticalAlignment="Top" Width="45" Height="43" Click="digit9_Click" FontSize="20"/>
+        <Button x:Name="digit0" Content="0" HorizontalAlignment="Left" Margin="173,312,0,0" VerticalAlignment="Top" Width="45" Height="43" Click="digit0_Click" FontSize="20" />
+        <Button x:Name="dot" Content="." HorizontalAlignment="Left" Margin="95,312,0,0" VerticalAlignment="Top" Width="45" Height="43" Click="dot_Click" FontSize="20"/>
+        <Button x:Name="equalButton" Content="=" HorizontalAlignment="Left" Margin="246,312,0,0" VerticalAlignment="Top" Width="45" Height="43" Click="equalButton_Click" FontSize="22" />
+        <Button x:Name="add" Content="+" HorizontalAlignment="Left" Margin="322,111,0,0" VerticalAlignment="Top" Width="45" Height="43" Click="add_Click" FontSize="22"/>
+        <Button x:Name="sub" Content="-" HorizontalAlignment="Left" Margin="322,177,0,0" VerticalAlignment="Top" Width="45" Height="43" Click="sub_Click" FontSize="24"/>
+        <Button x:Name="mul" Content="×" HorizontalAlignment="Left" Margin="322,245,0,0" VerticalAlignment="Top" Width="45" Height="43" Click="mul_Click" FontSize="24"/>
+        <Button x:Name="div" Content="÷" HorizontalAlignment="Left" Margin="322,312,0,0" VerticalAlignment="Top" Width="45" Height="43" Click="div_Click" FontSize="24"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="58" Margin="29,26,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="338" FontFamily="Calibri" FontSize="32" />
+        <Button x:Name="leftBracket" Content="(" HorizontalAlignment="Left" Margin="29,111,0,0" VerticalAlignment="Top" Width="45" Height="43" Click="leftBracket_Click" FontSize="20"  />
+        <Button x:Name="rightBracket" Content=")" HorizontalAlignment="Left" Margin="29,177,0,0" VerticalAlignment="Top" Width="45" Height="43" Click="rightBracket_Click" FontSize="20"   />
+        <Button x:Name="pi" Content="π" HorizontalAlignment="Left" Margin="29,245,0,0" VerticalAlignment="Top" Width="45" Height="43" Click="pi_Click" FontSize="20" ToolTip="圆周率"  />
+        <Button x:Name="e" Content="e" HorizontalAlignment="Left" Margin="29,312,0,0" VerticalAlignment="Top" Width="45" Height="43" Click="e_Click" FontSize="20"/>
+        <Button x:Name="power" Content="^" HorizontalAlignment="Left" Margin="434,246,0,0" VerticalAlignment="Top" Width="45" Height="43" Click="power_Click" FontSize="20"  />
+        <Button x:Name="sqrt" Content="√" HorizontalAlignment="Left" Margin="434,312,0,0" VerticalAlignment="Top" Width="45" Height="43" Click="sqrt_Click" FontSize="20"  />
+        <Button x:Name="del" Content="←" HorizontalAlignment="Left" Margin="434,111,0,0" VerticalAlignment="Top" Width="45" Height="43" FontSize="20"  />
+        <Button x:Name="clear" Content="C" HorizontalAlignment="Left" Margin="434,177,0,0" VerticalAlignment="Top" Width="45" Height="43" Click="clear_Click" FontSize="20"  />
+        <Button x:Name="sqrt_any" Content="x√Y" HorizontalAlignment="Left" Margin="510,312,0,0" VerticalAlignment="Top" Width="45" Height="43" Click="sqrt_any_Click" FontSize="18"   />
+        <Button x:Name="factorial" Content="!" HorizontalAlignment="Left" Margin="510,245,0,0" VerticalAlignment="Top" Width="45" Height="43" Click="fact_Click" FontSize="20" ToolTip="阶乘" />
+        <Button x:Name="about" Content="?" HorizontalAlignment="Left" Margin="510,178,0,0" VerticalAlignment="Top" Width="45" Height="43" Click="about_Click" FontSize="22"  ToolTip="关于"  />
+        <Button x:Name="log10" Content="lg" HorizontalAlignment="Left" Margin="510,111,0,0" VerticalAlignment="Top" Width="45" Height="43"   FontSize="22"  ToolTip="以10为底求对数"  />
+        <Button x:Name="sin" Content="sin" HorizontalAlignment="Left" Margin="587,312,0,0" VerticalAlignment="Top" Width="45" Height="43"  FontSize="18" ToolTip="求sin，单位：弧度" Click="sin_Click"  />
+        <Button x:Name="cos" Content="cos" HorizontalAlignment="Left" Margin="587,245,0,0" VerticalAlignment="Top" Width="45" Height="43"  FontSize="18" ToolTip="求cos，单位：弧度" Click="cos_Click"  />
+
+    </Grid>
+</Window>
